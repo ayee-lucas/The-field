@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
       </Head>
-      <Main heading='THE FIELD' title='The Global Platform for Talent and Sports Organizations' />
+      <Main heading='Discovering Sports Talent' title='The Global Platform for Talent and Sports Organizations' />
    </>
   )
 }
