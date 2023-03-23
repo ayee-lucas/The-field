@@ -71,8 +71,8 @@ const Navbar = () => {
 						</Link>
 					</li>
 					<li className="p-2">
-						<Link href="/" className="p-4 text-2xl hover:text-gray-300">
-							Login
+						<Link href="#About" className="p-4 text-2xl hover:text-gray-300">
+							About
 						</Link>
 					</li>
 					<li className="p-2">
@@ -80,12 +80,13 @@ const Navbar = () => {
 							Register
 						</Link>
 					</li>
+	
 					<li className="p-2">
-						<Link href="#About" className="p-4 text-2xl hover:text-gray-300">
-							About
+						<Link href="/" className="p-4 text-2xl hover:text-gray-300">
+							Login
 						</Link>
 					</li>
-				</ul>
+			</ul>
 				{/**Mobile Button */}
 				<div onClick={handleNav} className="block sm:hidden z-10">
 					{nav ? (

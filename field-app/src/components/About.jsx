@@ -9,7 +9,7 @@ const About = () => {
 				ABOUT <span className="text-green-500"> US</span>
 			</h1>
 			<div>
-				<p className="mt-8 mb-5">
+				<p className="mt-8">
 					Welcome to 'THE FIELD', a platform that connects talented
 					individuals with sports organizations around the world. We
 					believe that there are many skilled athletes out there who are
@@ -27,17 +27,17 @@ const About = () => {
 					we are committed to making that a reality.
 				</p>
 
-				<div className="max-w-[1240px] mx-auto p-1 rounded-[30px] bg-black mb-[3rem] shadow-2xl shadow-black">
+				<div className="max-w-[1240px] mx-auto p-1 rounded-[30px] my-[5rem] shadow-2xl shadow-black">
 					<div className="flex relative justify-center">
 						<div className="absolute bg-black/70 w-full top-0 left-0 right-0 bottom-0 rounded-[30px] z-[2]" />
 						<Image
 							width="1440"
 							height="600"
 							src={
-								"https://images.unsplash.com/photo-1649513786103-91257b1a9a2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80"
+								"https://images.unsplash.com/photo-1675328924810-a4b0d8b7f10b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1271&q=80"
 							}
-							className="rounded-[30px] max-h-[400px]"
-							style={{ objectFit: "cover" }}
+							className="rounded-[30px] max-h-[500px]"
+							style={{ objectFit: "cover"}}
 						/>
 					</div>
 				</div>
@@ -55,7 +55,7 @@ const About = () => {
 						technology industries.
 						<br /> <br />
 					</p>
-					<p className="bg-black text-white p-4">
+					<p className=" text-white bg-green-800 p-4">
 						We believe in the power of collaboration and are committed to
 						working with our users to improve our platform and provide the
 						best possible experience for everyone. We are excited to be
@@ -68,7 +68,7 @@ const About = () => {
 					Join us today and take the first step towards achieving your
 					dreams in the sports industry. Together, we can make a difference
 					and create a brighter future for all athletes.
-					<Link href="/" className="ml-4 underline">
+					<Link href="/" className="ml-4 underline text-green-500">
 						Register Now
 					</Link>
 				</p>
