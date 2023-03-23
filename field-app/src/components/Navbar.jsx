@@ -1,27 +1,39 @@
+// Importing necessary modules
+
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 /**/
-
+// Declare Navbar component
 const Navbar = () => {
+	// Object containing image urls
 	const navImages = {
-		plane: "https://cdn-icons-png.flaticon.com/512/1145/1145338.png",
-		planeBlack: "https://cdn-icons-png.flaticon.com/512/1145/1145277.png",
 		color: "https://cdn-icons-png.flaticon.com/512/817/817460.png",
 	};
-	const [nav, setNav] = useState(false);
 
+	// State for navbar toggle
+	const [nav, setNav] = useState(false);
+	// State for mobile navbar button toggle
 	const [navIcon, setNavIcon] = useState("opacity-0");
+
+	// State for navbar color
+	const [color, setColor] = useState("transparent");
+
+	// State for navbar text color
+	const [textColor, setTextColor] = useState("white");
+
+	// State for navbar title color
+	const [navTitle, setNavTitle] = useState("white");
+
+	// NavBar Toggler function
 
 	const handleNav = () => {
 		setNav(!nav);
 	};
 
-	const [color, setColor] = useState("transparent");
-	const [textColor, setTextColor] = useState("white");
-	const [navTitle, setNavTitle] = useState("white");
+	// Change navbar color and text color based on scroll position
 
 	useEffect(() => {
 		const changeColor = () => {
@@ -41,12 +53,17 @@ const Navbar = () => {
 		};
 		window.addEventListener("scroll", changeColor);
 	}, []);
+
+	// Return JSX
+
 	return (
 		<div
 			style={{ backgroundColor: `${color}` }}
 			className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
 		>
 			<div className="text-white flex justify-between items-center max-w-[1240px] p-4 m-auto">
+				{/* Logo */}
+
 				<Link href="/" className="flex items-center">
 					<h1
 						style={{ color: `${navTitle}` }}
@@ -61,33 +78,41 @@ const Navbar = () => {
 						className={navIcon}
 					/>
 				</Link>
+
+				{/* Desktop navigation menu */}
+
 				<ul style={{ color: `${textColor}` }} className="hidden sm:flex">
 					<li className="p-2">
-						<Link
-							href="#Home"
-							className="p-4 text-2xl hover:text-gray-300"
-						>
+						<Link href="/" className="p-4 text-2xl hover:text-green-900">
 							Home
 						</Link>
 					</li>
 					<li className="p-2">
-						<Link href="#About" className="p-4 text-2xl hover:text-gray-300">
+						<Link
+							href="#About"
+							className="p-4 text-2xl hover:text-green-900"
+						>
 							About
 						</Link>
 					</li>
 					<li className="p-2">
-						<Link href="/" className="p-4 text-2xl hover:text-gray-300">
+						<Link href="/" className="p-4 text-2xl hover:text-green-900">
 							Register
 						</Link>
 					</li>
-	
+
 					<li className="p-2">
-						<Link href="/" className="p-4 text-2xl hover:text-gray-300">
+						<Link
+							href="/Login"
+							className="p-4 text-2xl hover:text-green-900"
+						>
 							Login
 						</Link>
 					</li>
-			</ul>
+				</ul>
+
 				{/**Mobile Button */}
+
 				<div onClick={handleNav} className="block sm:hidden z-10">
 					{nav ? (
 						<AiOutlineClose size={40} className="text-white" />
@@ -120,7 +145,7 @@ const Navbar = () => {
 								Register
 							</Link>
 						</li>
-						
+
 						<li className="p-4 text-4xl transition-all hover:bg-white hover:text-green-500">
 							<Link
 								onClick={handleNav}

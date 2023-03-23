@@ -9,7 +9,7 @@ const About = () => {
 				ABOUT <span className="text-green-500"> US</span>
 			</h1>
 			<div>
-				<p className="mt-8">
+				<p className="mt-8 first-letter:text-4xl first-letter:font-bold first-letter:font-serif">
 					Welcome to 'THE FIELD', a platform that connects talented
 					individuals with sports organizations around the world. We
 					believe that there are many skilled athletes out there who are
