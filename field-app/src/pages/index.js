@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Main from '../components/Main'
-
+import Navbar from '@/components/Navbar'
+import About from '@/components/About'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,7 +16,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
       </Head>
+      <Navbar />
       <Main heading='Discovering Sports Talent' title='The Global Platform for Talent and Sports Organizations' />
+      <About />
    </>
   )
 }

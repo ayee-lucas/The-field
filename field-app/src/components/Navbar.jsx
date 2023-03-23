@@ -29,13 +29,15 @@ const Navbar = () => {
 				setColor("#ffff");
 				setTextColor("#109d00");
 				setNavTitle("#03b50f");
-                setNavIcon("opacity-100 transition-all absolute translate-x-[390%]")
-  			} else {
+				setNavIcon(
+					"opacity-100 transition-all absolute translate-x-[390%] sm:opacity-0 md:opacity-100"
+				);
+			} else {
 				setColor("transparent");
 				setTextColor("#ffff");
 				setNavTitle("#ffff");
-                setNavIcon("opacity-0")
-  			}
+				setNavIcon("opacity-0");
+			}
 		};
 		window.addEventListener("scroll", changeColor);
 	}, []);
@@ -60,7 +62,7 @@ const Navbar = () => {
 					/>
 				</Link>
 				<ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-					<li className="p-4">
+					<li className="p-2">
 						<Link
 							href="#Home"
 							className="p-4 text-2xl hover:text-gray-300"
@@ -68,14 +70,19 @@ const Navbar = () => {
 							Home
 						</Link>
 					</li>
-					<li className="p-4">
+					<li className="p-2">
 						<Link href="/" className="p-4 text-2xl hover:text-gray-300">
 							Login
 						</Link>
 					</li>
-					<li className="p-4">
+					<li className="p-2">
 						<Link href="/" className="p-4 text-2xl hover:text-gray-300">
 							Register
+						</Link>
+					</li>
+					<li className="p-2">
+						<Link href="#About" className="p-4 text-2xl hover:text-gray-300">
+							About
 						</Link>
 					</li>
 				</ul>
@@ -110,6 +117,16 @@ const Navbar = () => {
 						<li className="p-4 text-4xl transition-all hover:bg-white hover:text-green-500">
 							<Link href="/" className="p-4">
 								Register
+							</Link>
+						</li>
+						
+						<li className="p-4 text-4xl transition-all hover:bg-white hover:text-green-500">
+							<Link
+								onClick={handleNav}
+								href="#About"
+								className="p-4 hover:text-gray-300"
+							>
+								About
 							</Link>
 						</li>
 					</ul>
