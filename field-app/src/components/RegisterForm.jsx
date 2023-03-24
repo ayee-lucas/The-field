@@ -21,7 +21,7 @@ const RegisterForm = () => {
          */}
         <input
           type="text"
-          class=" placeholder:text-green-700 my-3 py-3 cursor-pointer  block text-center font-bold bg-white  w-full border border-green-600 rounded-md  pr-3 shadow-sm focus:outline-none focus:ring-black  focus:ring-1 sm:text-sm"
+          class=" placeholder:text-green-700 my-3 py-3  cursor-pointer  block text-center font-bold bg-white  w-full border border-green-600 rounded-md  pr-3 shadow-2xl shadow-black/40 focus:outline-none focus:ring-black  focus:ring-1 sm:text-sm"
           placeholder="Email"
         />
       </label>
@@ -31,7 +31,7 @@ const RegisterForm = () => {
            */}
           <input
             type="text"
-            class=" placeholder:text-green-700 my-5 cursor-pointer py-3  block text-center  bg-white w-full border border-green-600 rounded-md  pr-3 shadow-sm focus:outline-none focus:ring-black  focus:ring-1 sm:text-sm"
+            class=" placeholder:text-green-700 my-6 cursor-pointer py-3  block text-center  bg-white w-full border border-green-600 rounded-md  pr-3 shadow-2xl shadow-black/40  focus:outline-none focus:ring-black  focus:ring-1 sm:text-sm"
             placeholder="Username"
           />
         </label>
@@ -44,7 +44,7 @@ const RegisterForm = () => {
            */}
           <input
             type="text"
-            class=" placeholder:text-green-700 my-5 py-3 cursor-pointer  block text-center  bg-state w-full border border-green-600 rounded-md  pr-3 shadow-sm focus:outline-none focus:ring-black  focus:ring-1 sm:text-sm"
+            class=" placeholder:text-green-700 my-5 py-3 cursor-pointer  block text-center  bg-state w-full border border-green-600 rounded-md  pr-3 shadow-2xl shadow-black/40 focus:outline-none focus:ring-black  focus:ring-1 sm:text-sm"
             placeholder="Password"
           />
         </label>
@@ -54,7 +54,7 @@ const RegisterForm = () => {
            */}
           <input
             type="password"
-            class=" placeholder:text-green-700 my-5 cursor-pointer  block text-center text-white bg-black w-full border border-green-600 rounded-md py-2 pr-3 shadow-sm focus:outline-none focus:ring-black  focus:ring-1 sm:text-sm"
+            class=" placeholder:text-green-700 my-5 cursor-pointer text-sm block text-center  bg-white w-full border border-green-600 rounded-md py-2 pr-3 shadow-2xl shadow-black/40 focus:outline-none focus:ring-black  focus:ring-1 sm:text-sm"
             placeholder="Confirm Password"
           />
         </label>
@@ -66,7 +66,7 @@ const RegisterForm = () => {
            */}
           <input
             type="text"
-            class=" placeholder:text-green-700 my-5 cursor-pointer  block text-center text-white bg-black w-full border border-green-600 rounded-md py-2 pr-3 shadow-sm focus:outline-none focus:ring-black  focus:ring-1 sm:text-sm"
+            class=" placeholder:text-green-700 my-6 cursor-pointer  block text-center  bg-white w-full border border-green-600 rounded-md py-2 pr-3 shadow-2xl shadow-black/40 focus:outline-none focus:ring-black  focus:ring-1 sm:text-sm"
             placeholder="Name"
           />
         </label>
@@ -76,7 +76,7 @@ const RegisterForm = () => {
            */}
           <input
             type="text"
-            class=" placeholder:text-green-700 my-5 cursor-pointer  block text-center text-white bg-black w-full border border-green-600 rounded-md py-2 pr-3 shadow-sm focus:outline-none focus:ring-black  focus:ring-1 sm:text-sm"
+            class=" placeholder:text-green-700 my-6 cursor-pointer  block text-center  bg-white w-full border border-green-600 rounded-md py-2 pr-3 shadow-2xl shadow-black/40 focus:outline-none focus:ring-black  focus:ring-1 sm:text-sm"
             placeholder="Last Name"
           />
         </label>
