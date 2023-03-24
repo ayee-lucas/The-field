@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Main = ({ heading = "", title = "" }) => {
 	return (
@@ -8,9 +9,11 @@ const Main = ({ heading = "", title = "" }) => {
 				<h2 className="text-5xl font-bold">{heading}</h2>
 				<p className="py-5 text-xl">{title}</p>
 				<div className="mt-14">
-					<button className="px-8 py-3 border hover:bg-white hover:text-black transition-all">
-						Register
-					</button>
+					<Link href="/Register">
+						<button className="px-8 py-3 border hover:bg-white hover:text-black transition-all">
+							Register
+						</button>
+					</Link>
 				</div>
 			</div>
 		</div>

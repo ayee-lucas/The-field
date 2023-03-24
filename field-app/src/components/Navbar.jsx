@@ -69,7 +69,7 @@ const Navbar = () => {
 						style={{ color: `${navTitle}` }}
 						className="font-bold text-4xl"
 					>
-						THE FIELD
+						THE <span style={{color: "#03b50f"}}>FIELD</span>
 					</h1>
 					<Image
 						src={navImages.color}
@@ -89,14 +89,17 @@ const Navbar = () => {
 					</li>
 					<li className="p-2">
 						<Link
-							href="#About"
+							href="/#About"
 							className="p-4 text-2xl hover:text-green-900"
 						>
 							About
 						</Link>
 					</li>
 					<li className="p-2">
-						<Link href="/" className="p-4 text-2xl hover:text-green-900">
+						<Link
+							href="/Register"
+							className="p-4 text-2xl hover:text-green-900"
+						>
 							Register
 						</Link>
 					</li>

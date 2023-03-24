@@ -55,7 +55,7 @@ const About = () => {
 						technology industries.
 						<br /> <br />
 					</p>
-					<p className=" text-white bg-green-800 p-4">
+					<p className=" text-white bg-green-800 p-4 first-letter:text-3xl first-letter:font-bold first-letter:font-serif">
 						We believe in the power of collaboration and are committed to
 						working with our users to improve our platform and provide the
 						best possible experience for everyone. We are excited to be

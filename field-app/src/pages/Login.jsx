@@ -8,7 +8,7 @@ const Login = () => {
             <div className="-z-50">
                 <Navbar />
                 </div> 
-			<div className=" bg-black h-screen flex w-screen  ">
+			<div className=" bg-black h-screen flex w-screen ">
 				<LoginForm />
 			</div>
 
