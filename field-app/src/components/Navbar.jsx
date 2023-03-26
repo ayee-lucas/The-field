@@ -133,26 +133,26 @@ const Navbar = () => {
 					{/* MobileView */}
 
 					<ul className="w-full">
-						<li className="p-4 text-4xl transition-all hover:bg-white hover:text-green-500">
-							<Link href="#Home" className="p-4">
+						<li className="p-4 select-none text-4xl transition-all hover:bg-white hover:text-green-500">
+							<Link href="/" className="p-4">
 								Home
 							</Link>
 						</li>
-						<li className="p-4 text-4xl transition-all hover:bg-white hover:text-green-500">
-							<Link href="/" className="p-4">
+						<li className="p-4 select-none text-4xl transition-all hover:bg-white hover:text-green-500">
+							<Link href="/Login" className="p-4">
 								Login
 							</Link>
 						</li>
-						<li className="p-4 text-4xl transition-all hover:bg-white hover:text-green-500">
-							<Link href="/" className="p-4">
+						<li className="p-4 select-none text-4xl transition-all hover:bg-white hover:text-green-500">
+							<Link href="/Register" className="p-4">
 								Register
 							</Link>
 						</li>
 
-						<li className="p-4 text-4xl transition-all hover:bg-white hover:text-green-500">
+						<li className="p-4 select-none text-4xl transition-all hover:bg-white hover:text-green-500">
 							<Link
 								onClick={handleNav}
-								href="#About"
+								href="/#About"
 								className="p-4 hover:text-gray-300"
 							>
 								About
