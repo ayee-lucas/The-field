@@ -1,17 +1,51 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import RegisterDropdown from "./RegisterDropdown";
 import RegisterFormFields from "./RegisterFormField";
 import { SPORTS_DATA } from "@/components/Data/DropDownData";
 import RegisterFormHeader from "./RegisterFormHeader";
 import RegisterFormPassword from "./REgisterFormPassword";
+import RegisterButton from "./RegisterButton";
 
 const RegisterForm = () => {
+
+  /** Password Validation */
+
+  const [password, setPassword] = useState("");
+  const [contentPass, setContentPass] = useState(false);
+
+
+  useEffect(() => {
+    const passwordField = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+    if (passwordField !== "") {
+      setContentPass(true)
+       if (passwordField === confirmPassword) {
+        setPassword("green");
+      } else if (confirmPassword === "") {
+        setPassword("#166534");
+        setContentPass(false);
+      } else {
+        setPassword("red");
+      }     
+    } else {
+      setContentPass(false);
+    }
+  }, [password]);
+
+
+  const isSubmitButtonDisabled = password === "red" || !contentPass; 
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  }
+
   return (
     <form
       action=""
       className="bg-white py-4 px-4 backdrop-blur-2xl w-full h-full mt-[4rem]
       max-w-[1000px] max-h-[720px]  min-w-[400px] md:grid md:grid-cols-2"
     >
+      {/** Big Header */}
 
       <div className="login-bg px-3 w-full h-full sm:hidden md:flex md:relative max-sm:hidden 
         bg-cover bg-center">
@@ -22,14 +56,20 @@ const RegisterForm = () => {
         </p>
       </div>
 
+      {/** Mobile Header */}
+
       <div className="pl-4">
         <div className="md:hidden">
           <RegisterFormHeader />
-
         </div>
 
+        {/** Form Content */}
+
         <div className="sm:hidden max-sm:hidden md:flex px-2">
-          <h1 className="font-bold text-4xl py-10" j>
+
+          {/** "Sing Up" Title Desktop Form */}
+
+          <h1 className="font-bold text-4xl py-10" >
             SING <span className="text-green-700">UP </span>
           </h1>
 
@@ -37,38 +77,44 @@ const RegisterForm = () => {
 
         {/** Name Fields */}
 
-        <div className="transition-all hover:shadow-2xl shadow-black/20  px-2 mt-3" >
+        <div className="transition-all hover:shadow-2xl shadow-black/20 
+                        px-2 mt-3">
           <h1 className="font-bold text-[18px]">
             NAME
           </h1>
-          <div className="grid grid-cols-2 gap-3 h-[100px]">
+
+          {/** Input Fields */}
+
+          <div className="grid grid-cols-2 gap-3 h-[85px]">
             <label htmlFor="" className="relative flex">
               {/** <TiUser className="absolute left-3 top-8" />
            */}
-              <RegisterFormFields content="First Name" />
+              <RegisterFormFields content="First Name" id="firstName" type="text" />
             </label>
 
             <label htmlFor="" className="relative flex">
               {/** <TiUser className="absolute left-3 top-8" />
            */}
-              <RegisterFormFields content="Last Name" />
+              <RegisterFormFields content="Last Name" id="lastName" type="text" />
             </label>
           </div>
         </div>
 
-        {/** Username - Sport */}
+        {/**Account Infomation  */}
 
         <div className="transition-all hover:shadow-2xl shadow-black/40  w-full px-2 mt-2" >
           <h1 className="text-[18px] font-bold">
             ACCOUNT INFORMATION
           </h1>
 
-          <div className="grid grid-cols-2 gap-3 h-[100px]">
+          {/** Input Fields */}
+
+          <div className="grid grid-cols-2 gap-3 h-[85px]">
 
             <label htmlFor="" className="relative flex">
               {/** <TiUser className="absolute left-3 top-8" />
            */}
-              <RegisterFormFields content="Username" />
+              <RegisterFormFields content="Username" id="username" type="text" />
 
             </label>
 
@@ -78,13 +124,21 @@ const RegisterForm = () => {
 
           {/** Email Field */}
 
-          <label htmlFor="" className="relative flex">
+          <label htmlFor="" className="relative flex h-[85px]">
             {/** <TiUser className="absolute left-3 top-8" /> */}
-            <RegisterFormFields content="Email" />
+            <RegisterFormFields id="Email" content="Email" type="email" />
           </label>
 
           {/**Password Fields*/}
-            <RegisterFormPassword />
+          <RegisterFormPassword password={password} handlePasswordChange={handlePasswordChange} />
+
+          <div className="flex justify-center items-center pb-3 mt-5">
+            <input className="py-3 w-full border border-green-600 enabled:hover:bg-green-600 enabled:hover:text-white focus:bg-green-600 focus:text-white transition-all disabled:select-none"
+              type="submit"
+              disabled={isSubmitButtonDisabled}
+              value="FINISH"
+            />
+          </div>
         </div>
       </div>
     </form>

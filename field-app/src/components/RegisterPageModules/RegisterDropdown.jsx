@@ -23,7 +23,7 @@ const RegisterDropdown = ({ sports }) => {
       <div
         onClick={handleDropDown}
         className="relative flex justify-center  px-3 transition-all cursor-pointer items-center
-        w-full my-6 rounded-md bg-green-600 hover:border hover:border-black select-none"
+        w-full my-4 rounded-md bg-green-600 hover:border hover:border-black select-none"
       >
         <h1 className="">Select your sport</h1>
         <BsArrowDownShort
