@@ -3,11 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
+
 module.exports = {
   images: {
-    domains:[
-     'cdn-icons-png.flaticon.com',
-     'images.unsplash.com' 
+    domains: [
+      'cdn-icons-png.flaticon.com',
+      'images.unsplash.com'
     ]
-  }
+  },
 } 

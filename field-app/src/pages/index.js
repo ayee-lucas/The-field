@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Main from '../components/Main'
 import Navbar from '@/components/Navbar'
@@ -19,6 +18,6 @@ export default function Home() {
       <Navbar />
       <Main heading='Discovering Sports Talent' title='The Global Platform for Talent and Sports Organizations' />
       <About />
-   </>
+    </>
   )
 }

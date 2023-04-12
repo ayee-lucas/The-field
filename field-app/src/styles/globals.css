@@ -4,7 +4,13 @@
 
 html {
 	scroll-behavior: smooth;
+	height: 100%;
+	margin: 0;
 	font-family: "Raleway", sans-serif;
+}
+
+body{
+	margin: 0;
 }
 
 .main-bg-img {

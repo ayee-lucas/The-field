@@ -19,21 +19,21 @@ const RegisterForm = () => {
     const confirmPassword = document.getElementById("confirmPassword").value;
     if (passwordField !== "") {
       setContentPass(true)
-       if (passwordField === confirmPassword) {
+      if (passwordField === confirmPassword) {
         setPassword("green");
       } else if (confirmPassword === "") {
         setPassword("#166534");
         setContentPass(false);
       } else {
         setPassword("red");
-      }     
+      }
     } else {
       setContentPass(false);
     }
   }, [password]);
 
 
-  const isSubmitButtonDisabled = password === "red" || !contentPass; 
+  const isSubmitButtonDisabled = password === "red" || !contentPass;
 
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
@@ -42,12 +42,13 @@ const RegisterForm = () => {
   return (
     <form
       action=""
-      className="bg-white py-4 px-4 backdrop-blur-2xl w-full h-full mt-[4rem]
+      className="bg-white py-9 px-4 backdrop-blur-2xl w-full h-full 
       max-w-[1000px] max-h-[720px]  min-w-[400px] md:grid md:grid-cols-2"
     >
       {/** Big Header */}
 
-      <div className="login-bg px-3 w-full h-full sm:hidden md:flex md:relative max-sm:hidden 
+      <div className="login-bg px-3 w-full h-full flex relative justify-center
+        sm:hidden md:flex md:relative max-sm:hidden 
         bg-cover bg-center">
         <div className="absolute bg-black/50 w-full top-0 left-0 right-0 bottom-0  z-[2]" />
         <p className="text-[90px] px-4 font-bold text-white z-10"
@@ -65,11 +66,11 @@ const RegisterForm = () => {
 
         {/** Form Content */}
 
-        <div className="sm:hidden max-sm:hidden md:flex px-2">
+        <div className="sm:hidden max-sm:hidden md:flex">
 
           {/** "Sing Up" Title Desktop Form */}
 
-          <h1 className="font-bold text-4xl py-10" >
+          <h1 className="font-bold text-4xl py-10 lg:py5" >
             SING <span className="text-green-700">UP </span>
           </h1>
 

@@ -38,9 +38,11 @@ const LoginForm = () => {
 					</div>
 				</form>
 				<form action="">
-					<button className="border w-full rounded-2xl py-2 my-5 border-black hover:bg-green-600 hover:border-white hover:text-white transition-all">
-						Login
-					</button>
+					<Link href="/Home">
+						<button className="border w-full rounded-2xl py-2 my-5 border-black hover:bg-green-600 hover:border-white hover:text-white transition-all">
+							Login
+						</button>
+					</Link>
 
 					<div className="w-full bg-black h-[5px] " />
 
