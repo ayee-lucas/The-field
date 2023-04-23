@@ -43,14 +43,14 @@ const RegisterForm = () => {
     <form
       action=""
       className="bg-white py-9 px-4 backdrop-blur-2xl w-full h-full 
-      max-w-[1000px] max-h-[720px] min-h-[100px]  min-w-[100px] md:grid md:grid-cols-2 max-sm:m-4  max-sm:mt-28 max-sm:mb-14 max-sm:max-h-[630px]"
+      max-w-[1000px] max-h-[720px] min-h-[100px]  min-w-[100px] md:grid md:grid-cols-2 max-sm:m-4  max-sm:mt-[3rem] max-sm:max-h-[630px]"
     >
       {/** Big Header */}
 
       <div className="login-bg px-3 w-full h-full flex relative justify-center
         sm:hidden md:flex md:relative max-sm:hidden 
         bg-cover bg-center">
-        <div className="absolute bg-black/50 w-full top-0 left-0 right-0 bottom-0  z-[2]" />
+        <div className="absolute bg-black/50 w-full top-0 left-0 right-0 bottom-0 z-[2]" />
         <p className="text-[90px] px-4 font-bold text-white z-10"
         >R<br />E<br />A<br />D<br />
           <span className="text-green-600">Y?</span>
