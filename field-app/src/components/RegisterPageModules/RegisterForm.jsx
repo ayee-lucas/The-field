@@ -42,8 +42,8 @@ const RegisterForm = () => {
   return (
     <form
       action=""
-      className="bg-white py-9 px-4 backdrop-blur-2xl w-full h-full 
-      max-w-[1000px] max-h-[720px] min-h-[100px]  min-w-[100px] md:grid md:grid-cols-2 max-sm:m-4  max-sm:mt-[3rem] max-sm:max-h-[630px]"
+      className="bg-white py-9 px-4 backdrop-blur-2xl w-full  
+      max-w-[1000px]  h-[720px] min-w-[100px] md:grid md:grid-cols-2 max-sm:m-4  max-sm:mt-[5rem] max-sm:h-[630px]"
     >
       {/** Big Header */}
 
