@@ -43,7 +43,7 @@ const RegisterForm = () => {
     <form
       action=""
       className="bg-white py-9 px-4 backdrop-blur-2xl w-full h-full 
-      max-w-[1000px] max-h-[720px] min-h-[100px]  min-w-[100px] md:grid md:grid-cols-2 max-sm:m-4  max-sm:mt-24 max-sm:mb-10"
+      max-w-[1000px] max-h-[720px] min-h-[100px]  min-w-[100px] md:grid md:grid-cols-2 max-sm:m-4  max-sm:mt-28 max-sm:mb-14 max-sm:max-h-[630px]"
     >
       {/** Big Header */}
 
@@ -59,7 +59,7 @@ const RegisterForm = () => {
 
       {/** Mobile Header */}
 
-      <div className="pl-4">
+      <div className="">
         <div className="md:hidden">
           <RegisterFormHeader />
         </div>
@@ -79,7 +79,7 @@ const RegisterForm = () => {
         {/** Name Fields */}
 
         <div className="transition-all hover:shadow-2xl shadow-black/20 
-                        px-2 mt-3">
+                        mt-3">
           <h1 className="font-bold text-[18px]">
             NAME
           </h1>
@@ -103,7 +103,7 @@ const RegisterForm = () => {
 
         {/**Account Infomation  */}
 
-        <div className="transition-all hover:shadow-2xl shadow-black/40  w-full px-2 mt-2" >
+        <div className="transition-all hover:shadow-2xl shadow-black/40  w-full  mt-2" >
           <h1 className="text-[18px] font-bold">
             ACCOUNT INFORMATION
           </h1>
