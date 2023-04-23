@@ -43,7 +43,7 @@ const RegisterForm = () => {
     <form
       action=""
       className="bg-white py-9 px-4 backdrop-blur-2xl w-full h-full 
-      max-w-[1000px] max-h-[720px]  min-w-[400px] md:grid md:grid-cols-2"
+      max-w-[1000px] max-h-[720px] min-h-[100px]  min-w-[100px] md:grid md:grid-cols-2 max-sm:m-4  max-sm:mt-24 max-sm:mb-10"
     >
       {/** Big Header */}
 
@@ -133,7 +133,7 @@ const RegisterForm = () => {
           {/**Password Fields*/}
           <RegisterFormPassword password={password} handlePasswordChange={handlePasswordChange} />
 
-          <div className="flex justify-center items-center pb-3 mt-5">
+          <div className="flex justify-center items-center pb-1 mt-3">
             <input className="py-3 w-full border border-green-600 enabled:hover:bg-green-600 enabled:hover:text-white focus:bg-green-600 focus:text-white transition-all disabled:select-none"
               type="submit"
               disabled={isSubmitButtonDisabled}
