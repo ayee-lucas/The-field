@@ -42,7 +42,7 @@ const Navbar = () => {
 				setTextColor("#109d00");
 				setNavTitle("#03b50f");
 				setNavIcon(
-					"opacity-100 transition-all absolute translate-x-[390%] sm:opacity-0 md:opacity-100"
+					"opacity-100 transition-all translate-x-[20%] sm:opacity-0 md:opacity-100"
 				);
 			} else {
 				setColor("transparent");
