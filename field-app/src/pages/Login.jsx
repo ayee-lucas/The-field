@@ -3,17 +3,14 @@ import React from "react";
 import LoginForm from "@/components/LoginForm";
 
 const Login = () => {
-	return (
-		<>
-            <div className="-z-50">
-                <Navbar />
-                </div> 
-			<div className=" bg-black h-screen flex w-screen ">
-				<LoginForm />
-			</div>
-
-		</>
-	);
+  return (
+    <div className="h-screen w-full">
+        <Navbar />
+      <div className=" bg-black flex h-screen w-full ">
+        <LoginForm />
+      </div>
+    </div>
+  );
 };
 
 export default Login;

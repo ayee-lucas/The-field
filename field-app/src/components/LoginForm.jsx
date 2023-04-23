@@ -6,8 +6,8 @@ import { TiUser } from "react-icons/ti";
 
 const LoginForm = () => {
 	return (
-		<div className=" flex justify-center items-center  w-screen h-screen ">
-			<div className=" w-[450px] h-[600px] bg-white p-5 m-[3rem] min-w-[410px]">
+		<div className=" flex justify-center items-center  w-full h-screen">
+			<div className="h-[600px] bg-white p-5 m-[3rem] w-[600px] mt-24">
 				<div className="flex relative login-bg w-full h-[200px] bg-center bg-cover">
 					<div className="absolute bg-black/70 w-full top-0 left-0 right-0 bottom-0  z-[2]" />
 					<div className="flex justify-center w-full h-full items-center z-[3]">
