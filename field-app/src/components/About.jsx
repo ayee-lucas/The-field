@@ -42,7 +42,7 @@ const About = () => {
 					</div>
 				</div>
 
-				<div className="grid grid-cols-2 gap-4 text-justify">
+				<div className="grid grid-cols-2 gap-4 text-justify max-sm:grid max-sm:grid-cols-1 max-sm:gap-4">
 					<p className="p-2">
 						Our platform offers a range of features that allow athletes to
 						create a profile, showcase their skills, connect with other
